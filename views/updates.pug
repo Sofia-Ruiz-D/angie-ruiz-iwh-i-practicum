@@ -10,7 +10,7 @@ html
 
     form(action="/update-cobj" method="POST")
       div
-        label Name:
+        label Nombre:
         input(type="text" name="name" required)
 
       div
@@ -19,10 +19,7 @@ html
 
       div
         label Canal de Origen:
-        select(name="canal_origen")
-          option(value="WhatsApp") WhatsApp
-          option(value="Webchat") Webchat
-          option(value="Landing") Landing
+        input(type="text" name="canal_origen")
 
       div
-        button(type="submit") Submit
+        button(type="submit") Guardar

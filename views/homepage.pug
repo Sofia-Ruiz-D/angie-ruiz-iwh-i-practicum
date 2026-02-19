@@ -10,7 +10,7 @@ html
     if records && records.length
       table(border="1")
         tr
-          th Name
+          th Nombre
           th Programa
           th Canal
         each record in records
@@ -19,4 +19,4 @@ html
             td= record.properties.programa_interes
             td= record.properties.canal_origen
     else
-      p No records found.
+      p No se encuentran registros
