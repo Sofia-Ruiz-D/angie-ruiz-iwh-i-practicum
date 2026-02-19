@@ -1,0 +1,22 @@
+doctype html
+html
+  head
+    title Homepage
+    link(rel="stylesheet" href="/css/style.css")
+  body
+    h1 Solicitudes Bot Admisiones
+    a(href="/update-cobj") Añadir un nuevo registro
+
+    if records && records.length
+      table(border="1")
+        tr
+          th Name
+          th Programa
+          th Canal
+        each record in records
+          tr
+            td= record.properties.name
+            td= record.properties.programa_interes
+            td= record.properties.canal_origen
+    else
+      p No records found.

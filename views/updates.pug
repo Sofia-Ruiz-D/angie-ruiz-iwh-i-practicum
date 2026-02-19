@@ -1,0 +1,28 @@
+doctype html
+html
+  head
+    title Update Custom Object Form | Integrating With HubSpot I Practicum
+    link(rel="stylesheet" href="/css/style.css")
+  body
+    h1 Update Custom Object Form
+
+    a(href="/") Volver al inicio
+
+    form(action="/update-cobj" method="POST")
+      div
+        label Name:
+        input(type="text" name="name" required)
+
+      div
+        label Programa de Interés:
+        input(type="text" name="programa_interes")
+
+      div
+        label Canal de Origen:
+        select(name="canal_origen")
+          option(value="WhatsApp") WhatsApp
+          option(value="Webchat") Webchat
+          option(value="Landing") Landing
+
+      div
+        button(type="submit") Submit
