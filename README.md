@@ -59,7 +59,10 @@ https://app.hubspot.com/contacts/51096549/objects/2-57873272/views/all/list?pref
 
 npm install
 
-2. Ejecutar la aplicación:
+2. Crear archivo `.env` con la siguiente variable:
+HUBSPOT_TOKEN=tu_token_privado
+
+3. Ejecutar la aplicación:
 
 node index.js
 
